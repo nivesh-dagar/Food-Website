@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  line-height: 1.4;
+  color: white;
+}
+main {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+
+.background-image {
+  background-image: url(bg-image.jpg);
+  /* filter: blur(5px); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100em;
+  height: 100vh;
+  z-index: -1;
+}
+/* HEADER */
+header {
+  top: 0;
+  z-index: 100;
+  position: sticky;
+}
+nav {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.symbol {
+  font-size: 50px;
+}
+ul {
+  display: flex;
+  gap: 50px;
+  padding-left: 900px;
+}
+ul li {
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile img {
+  width: 50px;
+}
+
+/* TOP SECTION */
+.top-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.top-content h2 {
+  font-size: 40px;
+}
+.top-content p {
+  font-size: 20px;
+}
+
+/* MID SECTION */
+.mid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 30px;
+}
+.grid-item {
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+  width: 320px;
+  margin: 100px auto;
+  background: gray;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-content {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+}
+#mid {
+  margin: 0 20px;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+.add-symbol {
+  margin-left: 230px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: rgb(18, 113, 160);
+}
+
+/* BOTTOM SECTION */
+.btm-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.btm-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.btm-content h2 {
+  font-size: 40px;
+}
+.btm-content p {
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  color: rgb(54, 83, 10);
+  font-size: 20px;
+}
